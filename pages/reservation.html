@@ -54,6 +54,24 @@
         font-size: 16px;
         text-align: center;
       }
+
+      .reservation-card-list {
+        margin: 20px 0;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .reservation-card-area {
+        width: 50%;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #d4d4d4;
+        font-size: 50px;
+        color: #000;
+        line-height: 200px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -103,9 +121,9 @@
       <section>
         <ul>
           <!-- *ngFor -->
-          <li class="card-list">
-            <div class="card-area"></div>
-            <div class="card-info"></div>
+          <li class="reservation-card-list">
+            <div class="reservation-card-area">SEOUL</div>
+            <div class="reservation-card-info"></div>
           </li>
         </ul>
       </section>

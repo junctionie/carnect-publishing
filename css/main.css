@@ -50,3 +50,33 @@
   /* border 지우고 > 아이콘 넣기 */
   border: 1px solid #fff;
 }
+
+.card-list-container {
+  height: 250px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card-list {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-area {
+  height: 150px;
+  border-radius: 10px;
+  background-color: #d4d4d4;
+  font-size: 50px;
+  color: #000;
+  line-height: 150px;
+  text-align: center;
+}

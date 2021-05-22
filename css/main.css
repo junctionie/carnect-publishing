@@ -1,0 +1,52 @@
+/* main */
+.sub-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.reservation-section {
+  padding: 20px;
+}
+
+.reservation-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.reservation-button {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #4b81e7;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.reservation-service-section,
+.ordered-service-section {
+  padding-left: 20px;
+}
+
+.sub-title-container {
+  position: relative;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.sub-title-link {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  /* border 지우고 > 아이콘 넣기 */
+  border: 1px solid #fff;
+}

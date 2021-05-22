@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation - carnect</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      .reservation-main-container {
+        padding: 0 20px;
+      }
+
+      .info-where-container {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+      }
+
+      .info-where-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .info-where-container.from {
+        padding-right: 3px;
+      }
+
+      .info-where-container.to {
+        padding-left: 3px;
+      }
+
+      .info-label {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 2px;
+      }
+
+      .info-where,
+      .info-date {
+        border-radius: 10px;
+        width: 100%;
+        height: 40px;
+      }
+
+      .info-search-btn {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        background-color: #4b81e7;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="header-title"><a href="#">carnect</a></h1>
+    </header>
+
+    <main class="reservation-main-container">
+      <section>
+        <form action="#">
+          <div class="info-where-container from">
+            <label for="infoFromWhere" class="info-label"
+              >어디서 출발하시나요?</label
+            >
+            <input
+              id="infoFromWhere"
+              class="info-where"
+              type="text"
+              placeholder="busan"
+            />
+          </div>
+
+          <div class="info-where-container to">
+            <label for="infoToWhere" class="info-label">어디로 가시나요?</label>
+            <input
+              id="infoToWhere"
+              class="info-where"
+              type="text"
+              placeholder="seoul"
+            />
+          </div>
+
+          <div>
+            <label for="infoDate" class="info-label">날짜</label>
+            <input
+              id="infoDate"
+              class="info-date"
+              type="text"
+              placeholder="2021.05.24"
+            />
+          </div>
+
+          <button class="info-search-btn" type="submit">search</button>
+        </form>
+      </section>
+
+      <section>
+        <ul>
+          <!-- *ngFor -->
+          <li class="card-list">
+            <div class="card-area"></div>
+            <div class="card-info"></div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
